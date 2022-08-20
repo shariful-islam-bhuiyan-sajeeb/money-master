@@ -4,10 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>money master</title>
+    <title>Friends Calculation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body>
-    <h1> send to money master project file </h1>
-    <script src="js/money.js"></script>
+<body class="bg-green-100">
+
+  <main class=" text-center mt-12 mb-10 p-5">
+
+    <h1 class=" text-4xl font-semibold">Money Master</h1>
+     <p  class="font-semibold text-4xl p-4">Income</p>
+     
+       <div class="">
+        <p class=" text-2xl font-semibold p-2 inline">Income :</p>
+        <input id="income-field" class=" bg-gray-300 px-8 py-2 font-semibold " type="text" placeholder=" type  you amount">
+       </div>
+
+
+    <h2 class="  text-4xl font-bold mt-8"> Expensess</h2>
+     <div class=" ">
+            <div class="  px-5 mt-5">
+                <p  class=" text-2xl font-semibold p-2">Food : <input id="food-field" class=" bg-gray-300 px-8 py-2 " type="text" placeholder="Food Cost"></p>
+                
+            </div>
+            <div class=" mt-5">
+                <p class=" text-2xl font-semibold p-2 ">Rent : <input id="rent-field" class=" bg-gray-300 px-8 py-2 " type="text" placeholder=" Rent Cost"></p>
+            </div>
+            <div class="px-5 mt-5">
+                <p class=" text-2xl font-semibold pr-7">Clothes : <input id="clothes-field" class=" bg-gray-300 px-8 py-2 " type="text" placeholder="Clothes Cost"></p>
+                
+            </div>
+     </div>
+
+          <div class=" mt-5">
+            <button id="btn-calculator" class=" bg-blue-500 text-2xl px-12 py-3 rounded-lg hover:bg-red-500"> Calculate</button>
+            
+          </div>
+          
+        <h1 class=" font-semibold text-4xl py-5 ">Total Expenses : $<span id="total-expenses">0</span></h1>
+        <h1 class="font-semibold text-4xl py-4">Blance:$<span id="total-balance">0</span></h1>
+
+        <p class=" font-semibold text-2xl "> Save:  <input   class="py-1 px-2 bg-gray-300 w-20 rounded-lg" type="text" name="" id="saving-field" placeholder="%"> <span  class="p-4 font-bold">%</span> <button id="btn-save" class="bg-gray-300 px-10 py-2 rounded-lg hover:bg-emerald-600">Save</button></p>
+          
+        <p class=" text-2xl font-semibold  pt-7">Saving Amount: $<span id="saving-amount">0</span></p>
+        <p class="text-2xl font-semibold  pt-2">Remaining Balance: $<span id="remaining-balance">0</span></p>
+     
+     
+ </main >
+   
+    
+
+
+
+
+
+    <script src="js/app.js"></script>
 </body>
 </html>
